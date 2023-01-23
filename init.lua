@@ -8,7 +8,7 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
 end
 
 require('packer').startup(function(use)
-  -- Package manager
+  -- Package managr
   use 'wbthomason/packer.nvim'
 
   use { -- LSP Configuration & Plugins
@@ -72,6 +72,9 @@ require('packer').startup(function(use)
 
   -- Multi-cursor plugin
   use 'mg979/vim-visual-multi'
+
+  -- Dummy-text generator
+  use { "derektata/lorem.nvim" }
 
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
