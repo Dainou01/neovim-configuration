@@ -41,3 +41,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>cprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+vim.keymap.set("n", "<leader>ot", "<cmd>silent !tmux split -h<CR>", { silent = true, desc = "[O]pen [T]erminal"})
+vim.keymap.set("n", "<leader>oj", "<cmd>silent !tmux split -h 'julia'\\; last-pane <CR>", { silent = true, desc = "[O]pen [J]ulia"})
+

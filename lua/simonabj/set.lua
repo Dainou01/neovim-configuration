@@ -22,7 +22,13 @@ vim.opt.signcolumn = "yes"
 vim.opt.isfname = "@-@"
 
 vim.opt.updatetime = 80
-
 vim.opt.colorcolumn = "80"
 
+vim.opt.showmode = false
+vim.opt.showcmd = false
+vim.opt.ruler = false
+vim.opt.hidden = true
+
 vim.g.mapleader = " "
+
+vim.opt.filetype = "filetype-plugin-on"
