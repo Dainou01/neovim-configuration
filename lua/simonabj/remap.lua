@@ -30,10 +30,9 @@ vim.keymap.set("n", "Q", "<nop>")
 
 -- do some tmux stuff
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
-
 vim.keymap.set("n", "<leader>ot", "<cmd>silent !tmux split -h<CR>", { silent = true, desc = "[O]pen [T]erminal" })
-vim.keymap.set("n", "<leader>oj", "<cmd>silent !tmux split -h 'julia'\\; last-pane <CR>",
-    { silent = true, desc = "[O]pen [J]ulia" })
+vim.keymap.set("n", "<leader>ct", "<cmd>silent !tmux kill-pane -t {last}<CR>",
+    { silent = true, desc = "[C]lose [T]erminal" })
 
 -- LSP auto-formatting :D
 vim.keymap.set("n", "<leader>f", function()
